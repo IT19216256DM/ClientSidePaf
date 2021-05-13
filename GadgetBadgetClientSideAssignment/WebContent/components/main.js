@@ -7,7 +7,8 @@ $(document).ready(function()
 	$("#alertError").hide(); 
 }); 
 
-///SAVE ============================================ 
+
+///SAVE Function ============================================ 
 $(document).on("click", "#btnSave", function(event) 
 {  
 	// Clear alerts---------------------  
@@ -71,7 +72,8 @@ function onResearchSaveComplete(response, status){
 }
 
 
-//UPDATE========================================== 
+
+//UPDATE Function========================================== 
 $(document).on("click", ".btnUpdate", function(event) 
 		{     
 	$("#hidresearchIDSave").val($(this).closest("tr").find('#hidresearchIDUpdate').val());     
