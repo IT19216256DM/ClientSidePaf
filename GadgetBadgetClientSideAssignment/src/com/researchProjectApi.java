@@ -50,6 +50,7 @@ public class researchProjectApi extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 
+		// Calling Insert Method
 		String result = rObj.insertResearch(request.getParameter("researchName"),
 				request.getParameter("researchDescription"), request.getParameter("researchPrice"),
 				request.getParameter("researchDate"));
@@ -84,6 +85,7 @@ public class researchProjectApi extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		Map<String, String> param = getParasMap(request);
+		// Calling Update Method
 		String result = rObj.updateResearch(param.get("hidresearchIDSave").toString(),
 				param.get("researchName").toString().toString().replace("+", " "),
 				param.get("researchDescription").toString(), param.get("researchPrice").toString(),
@@ -99,7 +101,7 @@ public class researchProjectApi extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		Map<String, String> param = getParasMap(request);
-
+		// Calling Delete Method
 		String result = rObj.deleteResearch(param.get("researchID").toString());
 
 		response.getWriter().write(result);
