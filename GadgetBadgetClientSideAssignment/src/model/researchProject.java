@@ -1,5 +1,6 @@
 package model;
 
+//IT19216256_M.O.D.Mendis
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -26,6 +27,7 @@ public class researchProject {
 		return con;
 	}
 
+	// Method For Read Research
 	public String readResearch() {
 		String output = "";
 
@@ -83,7 +85,7 @@ public class researchProject {
 		return output;
 	}
 
-	// Insert appointment
+	// Insert Research Details
 	public String insertResearch(String researchName, String researchDescription, String researchPrice,
 			String researchDate) {
 		String output = "";
@@ -124,7 +126,7 @@ public class researchProject {
 		return output;
 	}
 
-	// Update appointment
+	// Update Research Details
 	public String updateResearch(String researchID, String researchName, String researchDescription,
 			String researchPrice, String researchDate) {
 		String output = "";
@@ -163,6 +165,7 @@ public class researchProject {
 		return output;
 	}
 
+	// Delete Research Details
 	public String deleteResearch(String researchID) {
 		String output = "";
 
