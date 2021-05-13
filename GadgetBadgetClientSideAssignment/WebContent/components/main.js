@@ -25,7 +25,7 @@ $(document).on("click", "#btnSave", function(event)
 		return;  
 	} 
 
-	// If valid------------------------  
+	// If it is valid------------------------  
 	var t = ($("#hidresearchIDSave").val() == "") ? "POST" : "PUT";
 	
 	$.ajax(
@@ -46,7 +46,7 @@ $(document).on("click", "#btnSave", function(event)
 function onResearchSaveComplete(response, status){
 	if(status == "success")
 	{
-		//var resultSet = JSON.parse(response);
+		var resultSet = JSON.parse(response);
 			
 		if(resultSet.status.trim() == "success")
 		{
