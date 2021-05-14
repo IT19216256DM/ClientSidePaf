@@ -85,7 +85,7 @@ public class researchProject {
 		return output;
 	}
 
-	// Insert Research Details
+	// Insert Research Project Details
 	public String insertResearch(String researchName, String researchDescription, String researchPrice,
 			String researchDate) {
 		String output = "";
