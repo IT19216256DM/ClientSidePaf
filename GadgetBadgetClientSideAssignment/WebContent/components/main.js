@@ -27,12 +27,12 @@ $(document).on("click", "#btnSave", function(event)
 	} 
 
 	// If it is valid------------------------  
-	var t = ($("#hidresearchIDSave").val() == "") ? "POST" : "PUT";
+	var status = ($("#hidresearchIDSave").val() == "") ? "POST" : "PUT";
 	
 	$.ajax(
 	{
 		url : "researchProjectApi",
-		type : t,
+		type : status,
 		data : $("#formResearch").serialize(),
 		dataType : "text",
 		complete : function(response, status)
